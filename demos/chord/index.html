@@ -18,6 +18,34 @@
       }
     </style>
     <style>
+      .__dumi-default-layout-content h2 {
+        margin: 32px 0 18px;
+      }
+    </style>
+    <style>
+      .__dumi-default-layout-content .gallery-item-box {
+        display: grid;
+        grid-gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 0.25fr));
+      }
+    </style>
+    <style>
+      .__dumi-default-layout-content .gallery-item-box a {
+        display: block;
+        padding: 12px;
+        overflow: hidden;
+        text-align: center;
+        border: 1px solid #f0f0f0;
+        border-radius: 4px;
+      }
+    </style>
+    <style>
+      .__dumi-default-layout-content .gallery-item-box a:hover {
+        border-color: #1890ff;
+        opacity: 1;
+      }
+    </style>
+    <style>
       .markdown > h4 {
         color: #1890ff !important;
       }
@@ -27,12 +55,53 @@
         max-height: 100px;
       }
     </style>
+    <style>
+      .__dumi-default-layout-content .markdown > img {
+        width: auto;
+        max-height: 450px;
+      }
+    </style>
+    <style>
+      .__dumi-default-layout-hero button {
+        background: #0170fe !important;
+        border: 1px solid #0170fe !important;
+      }
+    </style>
+    <style>
+      .__dumi-default-menu[data-mode="site"]
+        .__dumi-default-menu-list
+        > li
+        > a {
+        padding-left: 40px !important;
+      }
+    </style>
+    <style>
+      .__dumi-default-menu[data-mode="site"]
+        .__dumi-default-menu-list
+        > li
+        > a
+        ~ ul {
+        margin-left: 28px !important;
+        padding-left: 24px !important;
+      }
+    </style>
+    <style>
+      ul[role="slug-list"] li[data-depth="3"] > a > span {
+        color: #717484 !important;
+      }
+    </style>
+    <style>
+      .__dumi-default-layout[data-site-mode="true"] .__dumi-default-layout-toc {
+        top: 120px !important;
+        max-height: calc(95vh - 120px) !important;
+      }
+    </style>
     <link rel="stylesheet" href="/umi.css" />
     <script>
       window.routerBase = "/";
     </script>
     <script>
-      //! umi version: 3.4.2
+      //! umi version: 3.4.8
     </script>
     <script>
       !(function () {
@@ -45,7 +114,7 @@
         );
       })();
     </script>
-    <title>资金流向图</title>
+    <title>Chord</title>
   </head>
   <body>
     <div id="root"></div>
